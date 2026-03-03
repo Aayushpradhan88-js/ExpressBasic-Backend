@@ -31,6 +31,10 @@ app.post("/create", function(req, res){
     });
 })
 
+app.post("/create/:id", function(req, res){
+    console.log("added for specific post")
+})
+
 const port = 3000;
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
